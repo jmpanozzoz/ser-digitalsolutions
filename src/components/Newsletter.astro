@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import RobotAndHuman from "@/assets/robot-and-human.jpg";
+---
+
+<div class="container mx-auto ">
+	<div class="grid grid-cols-1 lg:grid-cols-2">
+        <div>
+            <Image
+				src={RobotAndHuman}
+				alt="Robot and Human"
+				class="rounded-t-box lg:rounded-t-none lg:rounded-l-box aspect-square object-cover"
+				width={720}
+				height={720}
+			/>
+        </div>
+        <div class="rounded-b-box lg:rounded-b-none lg:rounded-r-box bg-primary p-12 lg:p-24 space-y-12">
+            <h2 class="text-primary-content text-4xl lg:text-5xl font-bold">
+                Titulo de la sección
+			</h2>
+			<p class="text-primary-content text-xl">
+				Lorem ipsum dolor sit amet </p>
+			<button class="btn btn-outline btn-lg mt-8">
+				Botón CTA
+			</button>
+        </div>
+	</div>
+</div>
