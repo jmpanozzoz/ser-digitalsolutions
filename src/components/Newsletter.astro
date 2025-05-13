@@ -4,12 +4,12 @@ import RobotAndHuman from "@/assets/robot-and-human.jpg";
 ---
 
 <div class="container mx-auto ">
-	<div class="grid grid-cols-1 lg:grid-cols-2 ">
-        <div>
+	<div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="h-full">
             <Image
 				src={RobotAndHuman}
 				alt="Robot and Human"
-				class="rounded-t-box lg:rounded-t-none lg:rounded-l-box aspect-square object-cover"
+				class="rounded-t-box lg:rounded-t-none lg:rounded-l-box object-cover h-full"
 				width={720}
 				height={720}
 			/>
@@ -21,9 +21,14 @@ import RobotAndHuman from "@/assets/robot-and-human.jpg";
 			<p class="text-primary-content lg:text-xl">
 				Dejanos tu email para recibir novedades y promociones
 			</p>
-			<button class="btn btn-outline btn-lg mt-8">
-				Botón CTA
-			</button>
+			<form class="flex flex-row gap-2 items-center">
+                <label class="flex-1">
+                    <input class="input input-lg" type="email" required placeholder="some@email.com" />
+                </label>
+                <button class="btn btn-outline btn-lg">
+                     Suscribirme
+                </button>
+			</form>
         </div>
 	</div>
 </div>
