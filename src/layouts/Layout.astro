@@ -1,6 +1,7 @@
 ---
 import "@/styles/global.css"
 import { Font } from 'astro:assets';
+import { ClientRouter } from "astro:transitions";
 
 
 type Props = {
@@ -31,6 +32,8 @@ const links: Link[] = [
     <meta name="viewport" content="width=device-width"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <meta name="generator" content={Astro.generator}/>
+
+    <ClientRouter />
 
     <!-- Google Fonts: Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
