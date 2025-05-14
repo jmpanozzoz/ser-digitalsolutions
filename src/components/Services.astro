@@ -1,0 +1,60 @@
+---
+import {BrainIcon, WrenchIcon, BotIcon} from "lucide-react"
+
+type Service = {
+	icon?: any
+	title: string
+}
+
+const services: Service[] = [
+	{
+		icon: BotIcon,
+		title: "Automatización de procesos"
+	},
+	{
+		icon: BrainIcon,
+		title: "Integración de IA en procesos"
+	},
+	{
+		icon: WrenchIcon,
+		title: "Fine tuning de modelos LLM"
+	}
+]
+---
+
+<div class="container mx-auto space-y-8 lg:space-y-24">
+    <div class="text-6xl md:text-[6rem] font-bold text-center">
+        <h2>Algunos de nuestros servicios</h2>
+        <h2 class="font-caveat text-primary">más destacados</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+		{
+			services.map(service => (
+                    <div class="p-9 rounded-full border-1 border-gray-400 hover:border-primary hover:text-primary-content transition-all duration-300 ease-in-out">
+                        <div class="flex justify-center items-center gap-8 h-full">
+                            <service.icon />
+                            <h4 class="text-2xl lg:text-3xl font-bold">
+								{service.title}
+                            </h4>
+                        </div>
+                    </div>
+			))
+		}
+    </div>
+</div>
+
+<style>
+    @media (min-width: 1280px) {
+        svg {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    @media (max-width: 1279px) {
+        svg {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+</style>
