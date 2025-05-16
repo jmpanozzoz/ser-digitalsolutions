@@ -3,18 +3,18 @@ import { Image } from 'astro:assets';
 import RobotAndHuman from "@/assets/robot-and-human.jpg";
 ---
 
-<div class="container mx-auto">
+<div class="container mx-auto bg-primary rounded-box">
 	<div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="h-full">
             <Image
 				src={RobotAndHuman}
 				alt="Robot and Human"
-				class="rounded-t-box lg:rounded-t-none lg:rounded-l-box aspect-square object-cover h-full w-full"
+				class="object-cover object-center w-full h-full rounded-box"
 				width={720}
 				height={720}
 			/>
         </div>
-        <div class="rounded-b-box lg:rounded-b-none lg:rounded-r-box bg-primary p-6 lg:p-24 space-y-4 lg:space-y-12 flex flex-col justify-center">
+        <div class="p-6 lg:p-24 space-y-4 lg:space-y-12 flex flex-col justify-center">
             <h2 class="text-primary-content text-3xl lg:text-5xl font-bold">
                 Unite a nuestro newsletter
 			</h2>

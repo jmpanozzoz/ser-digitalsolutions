@@ -7,3 +7,13 @@
     --font-sans: var(--font-manrope);
     --font-caveat: var(--font-caveat);
 }
+
+@utility reverse-grid {
+    display: grid;
+    grid-auto-flow: row dense;
+    direction: rtl;
+}
+
+@utility reverse-grid-child {
+    direction: ltr;
+}
