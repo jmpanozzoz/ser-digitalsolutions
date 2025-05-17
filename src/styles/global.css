@@ -4,8 +4,10 @@
 }
 
 @theme inline {
-    --font-sans: var(--font-manrope);
+    --font-manrope: var(--font-manrope);
     --font-caveat: var(--font-caveat);
+
+    --font-sans: var(--font-manrope);
 }
 
 @utility reverse-grid {

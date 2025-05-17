@@ -11,7 +11,8 @@ export default defineConfig({
         plugins: [tailwindcss()]
     },
     experimental: {
-        fonts: [{
+        fonts: [
+            {
             provider: fontProviders.google(),
             name: "Manrope",
             cssVariable: "--font-manrope"
